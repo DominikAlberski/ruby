@@ -26,7 +26,7 @@
 #include "zjit.h"
 
 #ifndef _WIN32
-#include <sys/mman.h>
+#include "internal/vm_map.h"
 #endif
 
 enum jit_bindgen_constants {

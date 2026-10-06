@@ -13,7 +13,7 @@
 #include <stdbool.h>
 
 #ifndef _WIN32
-#include <sys/mman.h>
+#include "internal/vm_map.h"
 #endif
 
 #ifndef SHAPE_DEBUG

@@ -39,7 +39,7 @@ size_t RUBY_IO_BUFFER_DEFAULT_SIZE;
 #ifdef _WIN32
 #else
 #include <unistd.h>
-#include <sys/mman.h>
+#include "internal/vm_map.h"
 #endif
 
 enum {

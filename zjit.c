@@ -28,7 +28,7 @@
 #include "shape.h"
 
 #ifndef _WIN32
-#include <sys/mman.h>
+#include "internal/vm_map.h"
 #endif
 
 // This build config impacts the pointer tagging scheme and we only want to

@@ -674,7 +674,7 @@ nt_machine_stack_atfork(void)
     rb_native_mutex_initialize(&nt_machine_stack_lock);
 }
 
-#include <sys/mman.h>
+#include "internal/vm_map.h"
 
 // Page-align the configured sizes: the layout puts a guard page and a
 // MAP_FIXED machine stack behind the VM stack, and both must land on page

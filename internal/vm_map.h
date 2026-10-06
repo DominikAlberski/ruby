@@ -14,6 +14,9 @@
 #ifdef HAVE_SYS_MMAN_H
 # include <sys/mman.h>
 #endif
+#if !defined(MAP_ANONYMOUS) && defined(MAP_ANON)
+# define MAP_ANONYMOUS MAP_ANON
+#endif
 #ifdef HAVE_ERRNO_H
 # include <errno.h>             /* for errno, EAGAIN */
 #endif
